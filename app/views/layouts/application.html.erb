@@ -9,21 +9,10 @@
   </head>
 
   <body>
-
-    <header class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <%= link_to "sample app", '#', id: "logo" %>
-          <nav>
-            <ul class="nav pull-right">
-              <li><%= link_to "Home", 'home' %></li>
-              <li><%= link_to "Help", 'help' %></li>
-              <li><%= link_to "About", 'about' %></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <%= yield %>
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+    </div>
   </body>
 </html>

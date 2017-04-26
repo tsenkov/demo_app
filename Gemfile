@@ -55,3 +55,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #rspec shit
 gem 'capybara'
+
+#bootstrap css shit
+gem 'bootstrap-sass'
