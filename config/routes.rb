@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   match '/home', to: 'static_pages#home', via: [:get]
   match '/about', to: 'static_pages#about', via: [:get]
 
+  match '/signup', to: 'users#new', via: [:get]
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
