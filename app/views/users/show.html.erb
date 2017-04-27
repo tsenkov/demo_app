@@ -1,0 +1,13 @@
+<% provide(:title, @user.name) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <% User.find_each do |usr| %>
+      <h1>
+        <%= gravatar_for usr %>
+        <%= usr.name %>
+      </h1>
+      <% end %>
+    </section>
+  </aside>
+</div>

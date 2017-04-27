@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  resources :users
 
-  get 'users/new'
+  
 
   match '/', to: 'static_pages#home', via: [:get]
   match '/help', to: 'static_pages#help', via: [:get]
