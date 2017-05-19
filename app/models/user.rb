@@ -24,11 +24,6 @@ class User < ApplicationRecord
   validates :password, length: { minimum: 6 }
   validates :password_confirmation, presence: true
 
-  before_save { self.email.downcase! }
+  #before_save { self.email.downcase! }
 
-  private
-  ## Strong Parameters
-  def user_params
-    params.require(:name, :email, :password, :password_confirmation)
-  end
 end
